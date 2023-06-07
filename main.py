@@ -2,14 +2,14 @@ import pandas as pd # Pandas used for data manipulation and analysis
 from sklearn.feature_extraction.text import TfidfVectorizer # Convert a collection of raw documents to a matrix of TF-IDF (Term Frequency-Inverse Document Frequency) features
 from sklearn.metrics.pairwise import linear_kernel # Used to compute the linear kernel between two sets of vectors
 
-# Load the data
+# Load the data into a pandas dataframe
 movies = pd.read_csv('movies.csv')
 
 
 # Create a TF-IDF Vectorizer object
 tfidf = TfidfVectorizer()
 
-# Replace NaN with an empty string
+# Replace NaN with an empty string in the dataframe 
 movies['genres'] = movies['genres'].fillna('')
 
 # Generate the TF-IDF matrix
