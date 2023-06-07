@@ -1,21 +1,20 @@
-# Movie Recommender
-Movie Recommender Engine:
+# Movie Recommender Engine
 This project is a simple Movie Recommender Engine that uses cosine similarity to recommend movies that are most similar based on their genres.
 
-Installation:
+# Installation
 To run this project, you will need Python and the following Python libraries installed:
-
-pandas
-scikit-learn
+    pandas
+    scikit-learn
 You can install these packages using pip:
     'pip install pandas sklearn'
 
-Project Structure:
-This project has the following structure
+# Project Structure
+This project has the following structure:
 
 main.py: The main Python script that you'll execute to run the recommender.
 movies.csv: The movie dataset used for generating recommendations.
-Usage
+
+# Usage
 Navigate to the directory containing the project files.
 
 Run the main.py script.
@@ -23,7 +22,7 @@ Run the main.py script.
 The script will prompt you to input a movie title. The movie title must be one of the titles available in the movies.csv file.
 The recommender will output the top 10 movies that are most similar to the movie you entered, based on their genres.
 
-Methodology
+# Methodology
 The recommender uses the following process:
 
 1. Load the movie data from the movies.csv file into a pandas DataFrame.
